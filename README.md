@@ -12,12 +12,12 @@
 - Пагинация
 
 ## Скриншоты
+Главный экран и экран статьи
 
-**Главный экран**
-![Главный экран](screenshots/readme/news_screen.png)
-**Экран статьи**
-![Экран статьи](screenshots/readme/article_screen.png)
-**Экран настроек**
-![Экран настроек](screenshots/readme/settings_screen.png)
-**Пример: темная тема и новости на ангийском языке**
-![Пример: темная тема и новости на ангийском языке](screenshots/readme/dark_theme_eng.png)
+![](screenshots/readme/news_screen.png)
+![](screenshots/readme/article_screen.png)
+
+Экран настроек и пример темной темы с английским языком
+
+![](screenshots/readme/settings_screen.png)
+![](screenshots/readme/dark_theme_eng.png)
