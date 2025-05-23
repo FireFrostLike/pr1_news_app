@@ -1,16 +1,23 @@
 # pr1_news_app
 
-A new Flutter project.
+Мобильное приложение для просмотра новостных статей.
 
-## Getting Started
+## Возможности
 
-This project is a starting point for a Flutter application.
+- Основной экран с новостями на английском/русском языке (в зависимости от выбранного языка)
+- Экран который может отображает подробности по выбранной новстной статье
+- Возможность открыть выбранную статью в браузере
+- Поддержка светлой и тёмной темы
+- Поддержка английского и русского языков
+- Пагинация
 
-A few resources to get you started if this is your first Flutter project:
+## Скриншоты
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Главный экран**
+![Главный экран](screenshots/readme/news_screen.png)
+**Экран статьи**
+![Экран статьи](screenshots/readme/article_screen.png)
+**Экран настроек**
+![Экран настроек](screenshots/readme/settings_screen.png)
+**Пример: темная тема и новости на ангийском языке**
+![Пример: темная тема и новости на ангийском языке](screenshots/readme/dark_theme_eng.png)
