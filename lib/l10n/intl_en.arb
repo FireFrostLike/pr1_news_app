@@ -4,5 +4,10 @@
   "news": "News",
   "languageSelection": "Language selection",
   "openInBrowser": "Open in browser",
-  "article": "Article"
+  "article": "Article",
+  "doYouWantToAddANewsItemToYour": "Do you want to add a news item to your favorites?",
+  "add": "Add",
+  "favorites": "Favorites",
+  "doYouWantToDeleteANewsItemFromYour": "Do you want to delete a news item from your favorites?",
+  "delete": "Delete"
 }

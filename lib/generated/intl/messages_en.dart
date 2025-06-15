@@ -22,8 +22,17 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+    "add": MessageLookupByLibrary.simpleMessage("Add"),
     "article": MessageLookupByLibrary.simpleMessage("Article"),
     "darkTheme": MessageLookupByLibrary.simpleMessage("Dart theme"),
+    "delete": MessageLookupByLibrary.simpleMessage("Delete"),
+    "doYouWantToAddANewsItemToYour": MessageLookupByLibrary.simpleMessage(
+      "Do you want to add a news item to your favorites?",
+    ),
+    "doYouWantToDeleteANewsItemFromYour": MessageLookupByLibrary.simpleMessage(
+      "Do you want to delete a news item from your favorites?",
+    ),
+    "favorites": MessageLookupByLibrary.simpleMessage("Favorites"),
     "languageSelection": MessageLookupByLibrary.simpleMessage(
       "Language selection",
     ),

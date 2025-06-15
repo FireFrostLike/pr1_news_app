@@ -4,5 +4,10 @@
   "news": "Новости",
   "languageSelection": "Выбор языка",
   "openInBrowser": "Открыть в браузере",
-  "article": "Статья"
+  "article": "Статья",
+  "doYouWantToAddANewsItemToYour": "Вы хотите добавить новость в избранное?",
+  "add": "Добавить",
+  "favorites": "Избранное",
+  "doYouWantToDeleteANewsItemFromYour": "Вы хотите удалить новость из избранного?",
+  "delete": "Удалить"
 }

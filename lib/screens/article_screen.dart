@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 import '../generated/l10n.dart';
+import '../models/article_model.dart';
 
 class ArticleScreen extends StatelessWidget {
   const ArticleScreen({super.key});
@@ -18,6 +19,8 @@ class ArticleScreen extends StatelessWidget {
     final arguments = (ModalRoute.of(context)?.settings.arguments ??
         <String, dynamic>{}) as Map;
 
+    final ArticleModel articleInfo = arguments["articleInfo"];
+
     return Material(
       child: Scaffold(
         appBar: AppBar(
@@ -29,7 +32,7 @@ class ArticleScreen extends StatelessWidget {
         ),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
         floatingActionButton: FloatingActionButton.extended(
-          onPressed: () => _launchURL(arguments["url"]),
+          onPressed: () => _launchURL(articleInfo.url),
           label: Text(S.of(context).openInBrowser),
         ),
         body: Column(
@@ -40,7 +43,7 @@ class ArticleScreen extends StatelessWidget {
               width: double.maxFinite,
               color: theme.colorScheme.surfaceContainer,
               child: Image.network(
-                arguments["imageUrl"],
+                articleInfo.urlToImage,
                 fit: BoxFit.cover,
                 errorBuilder: (context, error, stackTrace) =>
                     Icon(Icons.image_not_supported),
@@ -51,11 +54,11 @@ class ArticleScreen extends StatelessWidget {
               child: Column(
                 children: [
                   Text(
-                    arguments["title"],
+                    articleInfo.title,
                     style: theme.textTheme.headlineSmall,
                   ),
                   Text(
-                    arguments["description"],
+                    articleInfo.description,
                     style: theme.textTheme.bodyMedium,
                   ),
                 ],

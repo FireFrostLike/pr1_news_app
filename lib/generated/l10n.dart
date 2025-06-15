@@ -94,6 +94,41 @@ class S {
   String get article {
     return Intl.message('Article', name: 'article', desc: '', args: []);
   }
+
+  /// `Do you want to add a news item to your favorites?`
+  String get doYouWantToAddANewsItemToYour {
+    return Intl.message(
+      'Do you want to add a news item to your favorites?',
+      name: 'doYouWantToAddANewsItemToYour',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Add`
+  String get add {
+    return Intl.message('Add', name: 'add', desc: '', args: []);
+  }
+
+  /// `Favorites`
+  String get favorites {
+    return Intl.message('Favorites', name: 'favorites', desc: '', args: []);
+  }
+
+  /// `Do you want to delete a news item from your favorites?`
+  String get doYouWantToDeleteANewsItemFromYour {
+    return Intl.message(
+      'Do you want to delete a news item from your favorites?',
+      name: 'doYouWantToDeleteANewsItemFromYour',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Delete`
+  String get delete {
+    return Intl.message('Delete', name: 'delete', desc: '', args: []);
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

@@ -3,6 +3,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get_it/get_it.dart';
 import 'package:pr1_news_app/data/local_storage.dart';
 import 'package:pr1_news_app/screens/article_screen.dart';
+import 'package:pr1_news_app/screens/favorites_screen.dart';
 import 'package:pr1_news_app/screens/news_screen.dart';
 import 'package:pr1_news_app/screens/settigns_screen.dart';
 import 'package:pr1_news_app/theme/app_theme.dart';
@@ -70,6 +71,7 @@ class _MyAppState extends State<MyApp> {
         "/": (context) => const NewsScreen(),
         "/settigns": (context) => const SettignsScreen(),
         "/article": (context) => const ArticleScreen(),
+        "/favorites": (context) => const FavoritesScreen(),
       },
     );
   }
